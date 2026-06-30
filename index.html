@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="有限会社 東雲亭の公式サイト。道後で泊まる、食べる、くつろぐ。ホテル東雲亭、道後焼き鳥一、道後味処二郎をご案内します。" />
+    <title>有限会社 東雲亭｜道後で泊まる、食べる、くつろぐ。</title>
+    <style>
+      :root { --bg:#15120f; --card:#211d18; --gold:#bd7229; --cream:#f5f0e7; --muted:#d8cabb; }
+      * { box-sizing:border-box; }
+      body { margin:0; background:var(--bg); color:var(--cream); font-family:"Yu Mincho","Hiragino Mincho ProN",serif; line-height:1.8; }
+      a { color:inherit; text-decoration:none; }
+      .hero { min-height:78vh; display:grid; align-items:center; padding:72px 28px; background:radial-gradient(circle at 20% 18%,rgba(189,114,41,.24),transparent 34%),linear-gradient(180deg,#17130f,#0f0d0b); }
+      .wrap { max-width:1080px; margin:auto; width:100%; }
+      .label { color:#f4d29c; font:12px system-ui,sans-serif; letter-spacing:.22em; text-transform:uppercase; }
+      h1 { margin:18px 0 0; font-size:clamp(38px,7vw,72px); line-height:1.25; font-weight:500; letter-spacing:.12em; }
+      .lead { max-width:680px; margin:28px 0 0; font-size:18px; color:#efe4d7; }
+      .shop-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:54px; }
+      .shop-card { min-height:260px; display:flex; flex-direction:column; justify-content:flex-end; padding:28px; background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(0,0,0,.28)),var(--card); border:1px solid rgba(244,210,156,.16); box-shadow:0 20px 60px rgba(0,0,0,.28); transition:.2s; }
+      .shop-card:hover { transform:translateY(-4px); border-color:#f4d29c; }
+      .shop-card small { color:#f4d29c; font-family:system-ui,sans-serif; letter-spacing:.16em; text-transform:uppercase; }
+      .shop-card h2 { margin:10px 0 8px; font-size:28px; font-weight:500; letter-spacing:.08em; }
+      .shop-card p { margin:0; color:var(--muted); font-size:14px; }
+      .disabled { opacity:.58; pointer-events:none; }
+      .info { padding:64px 28px; background:#0f0d0b; }
+      .detail { display:grid; grid-template-columns:150px 1fr; max-width:760px; padding:14px 0; border-top:1px solid rgba(255,255,255,.14); font-family:system-ui,-apple-system,"Yu Gothic",sans-serif; font-size:14px; }
+      dt { color:#d5a46b; }
+      dd { margin:0; }
+      footer { padding:24px; text-align:center; color:#bfb4a8; font:12px system-ui,sans-serif; background:#0a0908; }
+      @media (max-width:760px) { .hero { padding:56px 22px; }.shop-grid { grid-template-columns:1fr; }.shop-card { min-height:190px; }.detail { grid-template-columns:108px 1fr; font-size:13px; } }
+    </style>
+  </head>
+  <body>
+    <main class="hero">
+      <div class="wrap">
+        <p class="label">Dogo Tountei</p>
+        <h1>道後で泊まる、<br>食べる、くつろぐ。</h1>
+        <p class="lead">有限会社 東雲亭は、道後のまちで宿泊と食のおもてなしをお届けしています。観光の夜に、地元の一杯に、心地よい滞在に。</p>
+        <div class="shop-grid">
+          <a class="shop-card disabled" href="#" aria-disabled="true">
+            <small>Hotel</small>
+            <h2>ホテル東雲亭</h2>
+            <p>宿泊ページは準備中です。</p>
+          </a>
+          <a class="shop-card" href="yakitori-hajime/">
+            <small>Yakitori</small>
+            <h2>道後焼き鳥一</h2>
+            <p>炭火焼き鳥と一杯を楽しむ、道後の焼き鳥店。</p>
+          </a>
+          <a class="shop-card disabled" href="#" aria-disabled="true">
+            <small>Ajidokoro</small>
+            <h2>道後味処二郎</h2>
+            <p>飲食店ページは準備中です。</p>
+          </a>
+        </div>
+      </div>
+    </main>
+    <section class="info">
+      <div class="wrap">
+        <p class="label">Company</p>
+        <dl>
+          <div class="detail"><dt>会社名</dt><dd>有限会社 東雲亭（ユウゲンガイシャ トウウンテイ）</dd></div>
+          <div class="detail"><dt>店舗</dt><dd>ホテル東雲亭 / 道後焼き鳥一 / 道後味処二郎</dd></div>
+          <div class="detail"><dt>公式サイト</dt><dd>dogo-tountei.com</dd></div>
+        </dl>
+      </div>
+    </section>
+    <footer>© 有限会社 東雲亭</footer>
+  </body>
+</html>
