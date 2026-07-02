@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 230" role="img" aria-label="梅の挿し絵">
+  <defs>
+    <radialGradient id="plum" cx=".45" cy=".38" r=".65">
+      <stop offset="0" stop-color="#fff6f0"/>
+      <stop offset=".48" stop-color="#ee6570"/>
+      <stop offset="1" stop-color="#a91e2d"/>
+    </radialGradient>
+  </defs>
+  <g fill="none" stroke="#5b2b20" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M34 177c62-39 115-87 166-145" stroke-width="11"/>
+    <path d="M105 116c35-7 68-4 105 13" stroke-width="7"/>
+    <path d="M134 87c27-25 54-42 91-50" stroke-width="7"/>
+    <path d="M78 145c-15-31-17-62-7-99" stroke-width="6"/>
+  </g>
+  <g>
+    <g transform="translate(196 38)">
+      <circle r="15" fill="url(#plum)"/>
+      <circle cx="17" cy="-2" r="15" fill="url(#plum)"/>
+      <circle cx="8" cy="-17" r="15" fill="url(#plum)"/>
+      <circle cx="-10" cy="-13" r="15" fill="url(#plum)"/>
+      <circle cx="-13" cy="6" r="15" fill="url(#plum)"/>
+      <circle cx="1" cy="-5" r="6" fill="#f6d36b"/>
+    </g>
+    <g transform="translate(214 126) scale(.86)">
+      <circle r="15" fill="url(#plum)"/>
+      <circle cx="17" cy="-2" r="15" fill="url(#plum)"/>
+      <circle cx="8" cy="-17" r="15" fill="url(#plum)"/>
+      <circle cx="-10" cy="-13" r="15" fill="url(#plum)"/>
+      <circle cx="-13" cy="6" r="15" fill="url(#plum)"/>
+      <circle cx="1" cy="-5" r="6" fill="#f6d36b"/>
+    </g>
+    <g transform="translate(92 132) scale(.72)">
+      <circle r="15" fill="url(#plum)"/>
+      <circle cx="17" cy="-2" r="15" fill="url(#plum)"/>
+      <circle cx="8" cy="-17" r="15" fill="url(#plum)"/>
+      <circle cx="-10" cy="-13" r="15" fill="url(#plum)"/>
+      <circle cx="-13" cy="6" r="15" fill="url(#plum)"/>
+      <circle cx="1" cy="-5" r="6" fill="#f6d36b"/>
+    </g>
+  </g>
+</svg>

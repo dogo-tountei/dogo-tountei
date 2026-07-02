@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 260" role="img" aria-label="竹の挿し絵">
+  <defs>
+    <linearGradient id="bamboo" x1="0" x2="1">
+      <stop offset="0" stop-color="#66843c"/>
+      <stop offset=".55" stop-color="#c3aa55"/>
+      <stop offset="1" stop-color="#4f6d35"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M83 235c20-76 24-151 11-220" stroke="url(#bamboo)" stroke-width="17"/>
+    <path d="M121 239c7-83 2-158-18-225" stroke="url(#bamboo)" stroke-width="15"/>
+    <path d="M58 231c24-70 35-139 30-202" stroke="#7d9848" stroke-width="10"/>
+    <path d="M75 65h43M72 114h48M68 168h50M60 213h55" stroke="#53672f" stroke-width="4" opacity=".88"/>
+    <path d="M116 61c40-36 67-44 103-34-31 27-62 39-103 34z" fill="#728d3d" stroke="#d4bb62" stroke-width="2"/>
+    <path d="M108 112c49-18 80-13 111 9-38 14-72 10-111-9z" fill="#617b37" stroke="#d4bb62" stroke-width="2"/>
+    <path d="M94 150c-42-27-70-30-102-16 32 23 60 29 102 16z" fill="#789248" stroke="#d4bb62" stroke-width="2"/>
+    <path d="M120 195c42-10 70-2 96 21-36 7-66 0-96-21z" fill="#6f8d44" stroke="#d4bb62" stroke-width="2"/>
+  </g>
+</svg>

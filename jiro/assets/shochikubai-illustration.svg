@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" role="img" aria-label="松竹梅の和風挿絵">
+  <defs>
+    <linearGradient id="pine" x1="0" x2="1">
+      <stop offset="0" stop-color="#17351f"/>
+      <stop offset="1" stop-color="#4f7d45"/>
+    </linearGradient>
+    <linearGradient id="bamboo" x1="0" x2="1">
+      <stop offset="0" stop-color="#698b3a"/>
+      <stop offset="1" stop-color="#c4a84b"/>
+    </linearGradient>
+    <radialGradient id="plum" cx=".45" cy=".38" r=".65">
+      <stop offset="0" stop-color="#fff3ef"/>
+      <stop offset=".48" stop-color="#e85a64"/>
+      <stop offset="1" stop-color="#a71f2c"/>
+    </radialGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="7" flood-color="#000" flood-opacity=".25"/>
+    </filter>
+  </defs>
+
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#softShadow)">
+    <!-- gold circle -->
+    <path d="M113 324c87 74 245 79 319-18" stroke="#c98634" stroke-width="8" opacity=".86"/>
+    <path d="M99 306c97 100 287 104 354-20" stroke="#f0c477" stroke-width="2" opacity=".65"/>
+
+    <!-- pine branch -->
+    <path d="M58 264c58-28 96-52 141-91" stroke="#6b3d21" stroke-width="13"/>
+    <path d="M83 240c24-49 62-75 114-92" stroke="url(#pine)" stroke-width="8"/>
+    <path d="M105 226c15-33 47-56 84-72" stroke="url(#pine)" stroke-width="7"/>
+    <path d="M128 210c25-24 51-40 88-50" stroke="url(#pine)" stroke-width="6"/>
+    <path d="M82 239c-6-41 14-78 49-113" stroke="url(#pine)" stroke-width="7"/>
+    <path d="M111 225c-3-42 19-70 55-96" stroke="url(#pine)" stroke-width="6"/>
+    <path d="M143 203c-1-33 18-56 48-76" stroke="url(#pine)" stroke-width="6"/>
+    <path d="M104 234c34-4 66-2 103 10" stroke="url(#pine)" stroke-width="7"/>
+    <path d="M132 216c35-1 67 7 94 24" stroke="url(#pine)" stroke-width="6"/>
+
+    <!-- bamboo stalks -->
+    <path d="M273 336c12-92 18-183 8-272" stroke="url(#bamboo)" stroke-width="17"/>
+    <path d="M313 340c4-92 1-186-17-276" stroke="url(#bamboo)" stroke-width="15"/>
+    <path d="M244 332c22-86 36-172 32-252" stroke="#8aa34b" stroke-width="11" opacity=".9"/>
+    <path d="M264 121h44M259 181h50M254 246h52M245 303h55" stroke="#6f7d31" stroke-width="4" opacity=".9"/>
+    <path d="M298 126c48-38 77-45 119-36-37 28-70 42-119 36z" fill="#728d3d" stroke="#d5bc61" stroke-width="2"/>
+    <path d="M292 185c57-16 91-11 126 13-44 12-80 8-126-13z" fill="#617b37" stroke="#d5bc61" stroke-width="2"/>
+    <path d="M272 221c-45-28-76-31-111-18 34 22 65 30 111 18z" fill="#6c8a3e" stroke="#d5bc61" stroke-width="2"/>
+    <path d="M304 264c47-9 78 1 105 26-38 6-72-1-105-26z" fill="#789248" stroke="#d5bc61" stroke-width="2"/>
+
+    <!-- plum branch -->
+    <path d="M321 290c61-50 91-102 120-171" stroke="#5f2d20" stroke-width="10"/>
+    <path d="M359 247c29-4 61-3 91 9" stroke="#5f2d20" stroke-width="7"/>
+    <path d="M381 211c22-18 49-31 82-37" stroke="#5f2d20" stroke-width="7"/>
+  </g>
+
+  <g>
+    <g transform="translate(429 111)">
+      <circle r="14" fill="url(#plum)"/>
+      <circle cx="16" cy="-2" r="14" fill="url(#plum)"/>
+      <circle cx="7" cy="-16" r="14" fill="url(#plum)"/>
+      <circle cx="-9" cy="-12" r="14" fill="url(#plum)"/>
+      <circle cx="-12" cy="5" r="14" fill="url(#plum)"/>
+      <circle cx="1" cy="-5" r="6" fill="#f7d46a"/>
+    </g>
+    <g transform="translate(462 170) scale(.82)">
+      <circle r="14" fill="url(#plum)"/>
+      <circle cx="16" cy="-2" r="14" fill="url(#plum)"/>
+      <circle cx="7" cy="-16" r="14" fill="url(#plum)"/>
+      <circle cx="-9" cy="-12" r="14" fill="url(#plum)"/>
+      <circle cx="-12" cy="5" r="14" fill="url(#plum)"/>
+      <circle cx="1" cy="-5" r="6" fill="#f7d46a"/>
+    </g>
+    <g transform="translate(385 254) scale(.72)">
+      <circle r="14" fill="url(#plum)"/>
+      <circle cx="16" cy="-2" r="14" fill="url(#plum)"/>
+      <circle cx="7" cy="-16" r="14" fill="url(#plum)"/>
+      <circle cx="-9" cy="-12" r="14" fill="url(#plum)"/>
+      <circle cx="-12" cy="5" r="14" fill="url(#plum)"/>
+      <circle cx="1" cy="-5" r="6" fill="#f7d46a"/>
+    </g>
+  </g>
+</svg>

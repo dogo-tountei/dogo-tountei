@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 220" role="img" aria-label="松の挿し絵">
+  <defs>
+    <linearGradient id="needle" x1="0" x2="1">
+      <stop offset="0" stop-color="#15371f"/>
+      <stop offset="1" stop-color="#5d8a49"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M31 165c55-24 107-58 166-118" stroke="#6b3d21" stroke-width="14"/>
+    <path d="M66 143c4-48 34-88 83-118" stroke="url(#needle)" stroke-width="8"/>
+    <path d="M83 137c20-44 53-72 100-91" stroke="url(#needle)" stroke-width="7"/>
+    <path d="M105 121c31-31 66-49 109-55" stroke="url(#needle)" stroke-width="7"/>
+    <path d="M72 145c-18-38-6-84 27-127" stroke="url(#needle)" stroke-width="7"/>
+    <path d="M101 128c-9-39 7-72 42-105" stroke="url(#needle)" stroke-width="6"/>
+    <path d="M132 104c2-36 21-62 58-84" stroke="url(#needle)" stroke-width="6"/>
+    <path d="M72 147c39-6 78 2 118 24" stroke="url(#needle)" stroke-width="7"/>
+    <path d="M101 128c37 2 73 16 105 42" stroke="url(#needle)" stroke-width="6"/>
+    <path d="M136 105c39 8 68 23 92 48" stroke="url(#needle)" stroke-width="6"/>
+  </g>
+</svg>
