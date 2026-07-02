@@ -97,3 +97,374 @@
         letter-spacing: 0.18em;
         font-size: 13px;
       }
+
+      .brand-mark {
+        display: grid;
+        place-items: center;
+        width: 44px;
+        height: 44px;
+        border: 1px solid var(--gold);
+        border-radius: 50%;
+        color: var(--gold-soft);
+        font-family: "Yu Mincho", serif;
+        letter-spacing: 0;
+      }
+
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      .nav a {
+        padding: 8px 12px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .eyebrow {
+        margin: 0;
+        color: var(--gold-soft);
+        font-family: system-ui, -apple-system, "Yu Gothic", sans-serif;
+        font-size: 12px;
+        letter-spacing: 0.26em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 18px 0 0;
+        font-size: clamp(38px, 7vw, 78px);
+        font-weight: 500;
+        letter-spacing: 0.12em;
+        line-height: 1.22;
+      }
+
+      .lead {
+        max-width: 720px;
+        margin: 26px 0 0;
+        color: #efe1cd;
+        font-size: clamp(16px, 2.2vw, 19px);
+      }
+
+      .shop-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
+        margin-top: 56px;
+      }
+
+      .shop-card {
+        position: relative;
+        min-height: 310px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 28px;
+        overflow: hidden;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(0, 0, 0, 0.22)),
+          var(--card);
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow);
+        transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+      }
+
+      .shop-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(circle at 28% 18%, rgba(244, 210, 156, 0.16), transparent 28%),
+          linear-gradient(135deg, rgba(143, 36, 31, 0.2), transparent 44%);
+        opacity: 0.9;
+        pointer-events: none;
+      }
+
+      .shop-card::after {
+        content: "";
+        position: absolute;
+        top: 22px;
+        right: 22px;
+        width: 66px;
+        height: 66px;
+        display: grid;
+        place-items: center;
+        border: 1px solid rgba(244, 210, 156, 0.26);
+        border-radius: 50%;
+        color: rgba(244, 210, 156, 0.86);
+        background: rgba(0, 0, 0, 0.12);
+        font-size: 30px;
+        line-height: 1;
+        font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+        font-weight: 600;
+        box-shadow: inset 0 0 18px rgba(244, 210, 156, 0.08);
+        pointer-events: none;
+      }
+
+      .shop-card.hotel-card::after {
+        content: "泊";
+      }
+
+      .shop-card.yakitori-card::after {
+        content: "一";
+      }
+
+      .shop-card.jiro-card::after {
+        content: "二";
+      }
+
+      .shop-card:hover {
+        transform: translateY(-6px);
+        border-color: rgba(244, 210, 156, 0.72);
+      }
+
+      .shop-card > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .shop-kicker {
+        display: inline-flex;
+        width: fit-content;
+        padding: 4px 10px;
+        color: #15100b;
+        background: var(--gold-soft);
+        border-radius: 999px;
+        font-family: system-ui, -apple-system, "Yu Gothic", sans-serif;
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .shop-card h2 {
+        margin: 18px 0 10px;
+        font-size: clamp(25px, 3vw, 34px);
+        font-weight: 500;
+        letter-spacing: 0.08em;
+      }
+
+      .shop-card p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+
+      .shop-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 24px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 43px;
+        padding: 9px 15px;
+        border: 1px solid rgba(244, 210, 156, 0.7);
+        color: #fff;
+        background: rgba(0, 0, 0, 0.12);
+        font-family: system-ui, -apple-system, "Yu Gothic", sans-serif;
+        font-size: 13px;
+        letter-spacing: 0.06em;
+        transition: 0.2s ease;
+      }
+
+      .button.primary {
+        background: var(--gold);
+        border-color: var(--gold);
+        color: #140e09;
+        font-weight: 700;
+      }
+
+      .button:hover {
+        background: var(--gold-soft);
+        border-color: var(--gold-soft);
+        color: #15120f;
+      }
+
+      .info {
+        padding: 72px 24px;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent),
+          #0c0a08;
+      }
+
+      .info-layout {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 42px;
+        align-items: start;
+      }
+
+      .info h2 {
+        margin: 12px 0 0;
+        font-size: clamp(28px, 4vw, 44px);
+        font-weight: 500;
+        letter-spacing: 0.08em;
+      }
+
+      .details {
+        margin: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.14);
+      }
+
+      .detail {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 18px;
+        padding: 16px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        font-family: system-ui, -apple-system, "Yu Gothic", sans-serif;
+        font-size: 14px;
+      }
+
+      dt {
+        color: #d9a567;
+      }
+
+      dd {
+        margin: 0;
+        color: #eee0ce;
+      }
+
+      footer {
+        padding: 26px 24px;
+        text-align: center;
+        color: #bfb4a8;
+        background: #080706;
+        font: 12px system-ui, -apple-system, "Yu Gothic", sans-serif;
+      }
+
+      @media (max-width: 860px) {
+        .hero {
+          padding: 28px 20px 52px;
+        }
+
+        .hero::before {
+          inset: 10px;
+        }
+
+        .topbar {
+          align-items: flex-start;
+          flex-direction: column;
+          margin-bottom: 38px;
+        }
+
+        .shop-grid,
+        .info-layout {
+          grid-template-columns: 1fr;
+        }
+
+        .shop-grid {
+          margin-top: 38px;
+        }
+
+        .shop-card {
+          min-height: 245px;
+          padding: 24px;
+        }
+
+        .button {
+          width: 100%;
+        }
+
+        .detail {
+          grid-template-columns: 108px 1fr;
+          gap: 12px;
+          font-size: 13px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="hero">
+      <div class="wrap">
+        <header class="topbar">
+          <a class="brand" href="./" aria-label="有限会社 東雲亭 トップ">
+            <span class="brand-mark">東</span>
+            <span>有限会社 東雲亭</span>
+          </a>
+          <nav class="nav" aria-label="店舗ページ">
+            <a href="https://hpdsp.jp/tountei/">ホテル東雲亭</a>
+            <a href="yakitori-hajime/index.html">焼き鳥一</a>
+            <a href="jiro/index.html">味処二郎</a>
+          </nav>
+        </header>
+
+        <p class="eyebrow">Dogo Tountei Official Site</p>
+        <h1>道後で泊まる、<br />食べる、くつろぐ。</h1>
+        <p class="lead">
+          有限会社 東雲亭は、道後のまちで宿泊と食のおもてなしをお届けしています。
+          観光の夜に、地元の一杯に、心地よい滞在に。三つの入口からお選びください。
+        </p>
+
+        <div class="shop-grid">
+          <a class="shop-card hotel-card" href="https://hpdsp.jp/tountei/">
+            <div>
+              <span class="shop-kicker">Hotel</span>
+              <h2>ホテル東雲亭</h2>
+              <p>道後温泉観光の拠点に。宿泊予約・客室情報は現在のホテルページへご案内します。</p>
+            </div>
+            <div class="shop-actions">
+              <span class="button primary">ホテルページを見る</span>
+            </div>
+          </a>
+
+          <section class="shop-card yakitori-card">
+            <div>
+              <span class="shop-kicker">Yakitori</span>
+              <h2>道後焼き鳥一</h2>
+              <p>炭火で焼き上げる串と一杯を楽しむ、道後の夜に寄り添う焼き鳥店。</p>
+            </div>
+            <div class="shop-actions">
+              <a class="button primary" href="yakitori-hajime/index.html">店舗ページを見る</a>
+              <a class="button" href="tel:0899070054">電話する</a>
+            </div>
+          </section>
+
+          <section class="shop-card jiro-card">
+            <div>
+              <span class="shop-kicker">Ajidokoro</span>
+              <h2>道後味処二郎</h2>
+              <p>宇和島鯛めしと鯛釜飯を一押しに、定食・一品料理まで楽しめる味処。</p>
+            </div>
+            <div class="shop-actions">
+              <a class="button primary" href="jiro/index.html">店舗ページを見る</a>
+              <a class="button" href="tel:0899070095">電話する</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <section class="info" id="company">
+      <div class="wrap info-layout">
+        <div>
+          <p class="eyebrow">Company</p>
+          <h2>東雲亭について</h2>
+        </div>
+        <dl class="details">
+          <div class="detail">
+            <dt>会社名</dt>
+            <dd>有限会社 東雲亭（ユウゲンガイシャ トウウンテイ）</dd>
+          </div>
+          <div class="detail">
+            <dt>店舗</dt>
+            <dd>ホテル東雲亭 / 道後焼き鳥一 / 道後味処二郎</dd>
+          </div>
+          <div class="detail">
+            <dt>公式サイト</dt>
+            <dd>dogo-tountei.com</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <footer>© 有限会社 東雲亭</footer>
+  </body>
+</html>
