@@ -65,6 +65,11 @@
       .dish-body { padding:30px; }
       .dish-number { margin:0 0 8px; color:#ffd79a; font:12px system-ui,-apple-system,sans-serif; letter-spacing:.18em; }
       .dish h3 { margin:0; font-size:30px; font-weight:500; letter-spacing:.08em; }
+      .translation,
+      .dish .translation,
+      .original-card .translation,
+      .teishoku-card .translation,
+      .menu-card .translation { margin:6px 0 0; color:#cdbda8; font-family:system-ui,-apple-system,"Yu Gothic",sans-serif; font-size:12px; line-height:1.5; letter-spacing:.02em; }
       .dish p { margin:16px 0 0; color:var(--muted); }
       .story { background:#f5ead7; color:#21170f; }
       .story::before { color:rgba(183,53,40,.1); }
@@ -89,7 +94,8 @@
       .teishoku-card:hover { transform:translateY(-6px); border-color:rgba(255,215,154,.34); }
       .teishoku-card img { width:100%; aspect-ratio:4/3; object-fit:cover; display:block; transition:transform .72s ease; }
       .teishoku-card:hover img { transform:scale(1.05); }
-      .teishoku-card h3 { margin:0; padding:18px 18px 20px; font-size:20px; font-weight:500; letter-spacing:.06em; }
+      .teishoku-card h3 { margin:0; padding:18px 18px 0; font-size:20px; font-weight:500; letter-spacing:.06em; }
+      .teishoku-card .translation { padding:0 18px 20px; }
       .menu-section { background:#120f0c; }
       .menu-section.alt { background:#1b1410; }
       .menu-lead { max-width:760px; margin:18px 0 0; color:var(--muted); }
@@ -98,7 +104,8 @@
       .menu-card:hover { transform:translateY(-6px); border-color:rgba(255,215,154,.34); }
       .menu-card img { width:100%; aspect-ratio:4/3; object-fit:cover; display:block; transition:transform .72s ease; }
       .menu-card:hover img { transform:scale(1.05); }
-      .menu-card h3 { margin:0; padding:18px 18px 20px; font-size:20px; font-weight:500; letter-spacing:.06em; }
+      .menu-card h3 { margin:0; padding:18px 18px 0; font-size:20px; font-weight:500; letter-spacing:.06em; }
+      .menu-card .translation { padding:0 18px 20px; }
       .info { background:#100d0b; }
       .info-grid { display:grid; grid-template-columns:1fr 1fr; gap:26px; margin-top:34px; }
       .info-card { padding:28px; background:#211a14; border:1px solid rgba(255,215,154,.14); }
@@ -198,6 +205,7 @@
             <div class="dish-body">
               <p class="dish-number">01 / UWAJIMA TAI MESHI</p>
               <h3>宇和島鯛めし</h3>
+              <p class="translation">Uwajima-style Sea Bream Rice / 우와지마식 도미덮밥</p>
               <p>新鮮な鯛を、卵入りの特製だれと一緒にご飯へ。愛媛らしさを感じる、二郎の看板料理です。</p>
             </div>
           </article>
@@ -206,6 +214,7 @@
             <div class="dish-body">
               <p class="dish-number">02 / TAI KAMAMESHI</p>
               <h3>鯛釜飯</h3>
+              <p class="translation">Sea Bream Kamameshi / 도미 솥밥</p>
               <p>ふっくら炊き上げる釜飯に、鯛の旨みを閉じ込めて。香りまで楽しめる、もう一つの主役です。</p>
             </div>
           </article>
@@ -230,6 +239,7 @@
           <div>
             <span class="badge">二郎オリジナル</span>
             <h3>じゃこかつ丼</h3>
+            <p class="translation">Jakokatsu Rice Bowl / 자코카츠 덮밥</p>
             <p>道後味処二郎のオリジナル商品。他では食べられない、二郎ならではの一杯です。サクッとしたじゃこかつを丼で楽しめる、観光のお客様にもおすすめの名物です。</p>
           </div>
         </div>
@@ -244,22 +254,27 @@
           <article class="teishoku-card">
             <img src="assets/ara-daki-teishoku.jpg" alt="鯛のあら炊き定食" />
             <h3>鯛のあら炊き定食</h3>
+            <p class="translation">Simmered Sea Bream Set / 도미 조림 정식</p>
           </article>
           <article class="teishoku-card">
             <img src="assets/tonkatsu-teishoku.jpg" alt="トンカツ定食" />
             <h3>トンカツ定食</h3>
+            <p class="translation">Pork Cutlet Set / 돈카츠 정식</p>
           </article>
           <article class="teishoku-card">
             <img src="assets/karaage-teishoku.jpg" alt="唐揚げ定食" />
             <h3>唐揚げ定食</h3>
+            <p class="translation">Fried Chicken Set / 닭튀김 정식</p>
           </article>
           <article class="teishoku-card">
             <img src="assets/tamagoyaki-teishoku.jpg" alt="卵焼き定食" />
             <h3>卵焼き定食</h3>
+            <p class="translation">Japanese Omelet Set / 계란말이 정식</p>
           </article>
           <article class="teishoku-card">
             <img src="assets/mixed-fry-teishoku.jpg" alt="ミックスフライ定食" />
             <h3>ミックスフライ定食</h3>
+            <p class="translation">Mixed Fried Set / 모둠튀김 정식</p>
           </article>
         </div>
       </div>
@@ -274,26 +289,32 @@
           <article class="menu-card">
             <img src="assets/katsu-curry.jpg" alt="カツカレー" />
             <h3>カツカレー</h3>
+            <p class="translation">Cutlet Curry / 카츠카레</p>
           </article>
           <article class="menu-card">
             <img src="assets/curry-udon.jpg" alt="カレーうどん" />
             <h3>カレーうどん</h3>
+            <p class="translation">Curry Udon / 카레 우동</p>
           </article>
           <article class="menu-card">
             <img src="assets/nabeyaki-udon.jpg" alt="鍋焼きうどん" />
             <h3>鍋焼きうどん</h3>
+            <p class="translation">Hot Pot Udon / 냄비 우동</p>
           </article>
           <article class="menu-card">
             <img src="assets/tai-chazuke.jpg" alt="鯛茶漬け" />
             <h3>鯛茶漬け</h3>
+            <p class="translation">Sea Bream Ochazuke / 도미 오차즈케</p>
           </article>
           <article class="menu-card">
             <img src="assets/shirasu-don.jpg" alt="シラス丼" />
             <h3>シラス丼</h3>
+            <p class="translation">Whitebait Rice Bowl / 시라스 덮밥</p>
           </article>
           <article class="menu-card">
             <img src="assets/shio-onigiri.jpeg" alt="塩握り" />
             <h3>塩握り</h3>
+            <p class="translation">Salted Rice Ball / 소금 주먹밥</p>
           </article>
         </div>
       </div>
@@ -308,18 +329,22 @@
           <article class="menu-card">
             <img src="assets/sashimi-moriawase.jpg" alt="刺し盛2人前" />
             <h3>刺し盛2人前</h3>
+            <p class="translation">Assorted Sashimi for Two / 모둠회 2인분</p>
           </article>
           <article class="menu-card">
             <img src="assets/tai-sashimi.jpg" alt="鯛刺身" />
             <h3>鯛刺身</h3>
+            <p class="translation">Sea Bream Sashimi / 도미회</p>
           </article>
           <article class="menu-card">
             <img src="assets/kanpachi-sashimi.jpg" alt="カンパチ刺身" />
             <h3>カンパチ刺身</h3>
+            <p class="translation">Amberjack Sashimi / 잿방어회</p>
           </article>
           <article class="menu-card">
             <img src="assets/salmon-sashimi.jpg" alt="サーモン刺身" />
             <h3>サーモン刺身</h3>
+            <p class="translation">Salmon Sashimi / 연어회</p>
           </article>
         </div>
       </div>
@@ -334,38 +359,47 @@
           <article class="menu-card">
             <img src="assets/ankimo.jpg" alt="あん肝" />
             <h3>あん肝</h3>
+            <p class="translation">Monkfish Liver / 아귀 간</p>
           </article>
           <article class="menu-card">
             <img src="assets/ikayaki.jpg" alt="イカ焼き" />
             <h3>イカ焼き</h3>
+            <p class="translation">Grilled Squid / 오징어구이</p>
           </article>
           <article class="menu-card">
             <img src="assets/carpaccio.jpg" alt="カルパッチョ" />
             <h3>カルパッチョ</h3>
+            <p class="translation">Carpaccio / 카르파초</p>
           </article>
           <article class="menu-card">
             <img src="assets/kaki-fry.jpg" alt="カキフライ" />
             <h3>カキフライ</h3>
+            <p class="translation">Fried Oysters / 굴튀김</p>
           </article>
           <article class="menu-card">
             <img src="assets/gratin-croquette.jpg" alt="グラタンコロッケ" />
             <h3>グラタンコロッケ</h3>
+            <p class="translation">Creamy Gratin Croquette / 그라탱 고로케</p>
           </article>
           <article class="menu-card">
             <img src="assets/takowasa.jpg" alt="たこわさ" />
             <h3>たこわさ</h3>
+            <p class="translation">Octopus with Wasabi / 타코와사</p>
           </article>
           <article class="menu-card">
             <img src="assets/sakura-yukke.jpg" alt="桜ユッケ" />
             <h3>桜ユッケ</h3>
+            <p class="translation">Horse Meat Yukhoe / 말고기 육회</p>
           </article>
           <article class="menu-card">
             <img src="assets/karaage-ippin.jpg" alt="唐揚げ" />
             <h3>唐揚げ</h3>
+            <p class="translation">Fried Chicken / 닭튀김</p>
           </article>
           <article class="menu-card">
             <img src="assets/morokyu.jpg" alt="もろきゅう" />
             <h3>もろきゅう</h3>
+            <p class="translation">Cucumber with Miso / 오이 된장</p>
           </article>
         </div>
       </div>
