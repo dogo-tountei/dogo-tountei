@@ -276,6 +276,14 @@
       line-height: 1.25;
     }
 
+    .translation {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-family: "Yu Gothic", "Hiragino Sans", Meiryo, sans-serif;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+
     .tag {
       flex: 0 0 auto;
       border-left: 3px solid var(--gold);
@@ -292,6 +300,13 @@
       font-family: "Yu Gothic", "Hiragino Sans", Meiryo, sans-serif;
       font-size: 14px;
       line-height: 1.75;
+    }
+
+    .dish .translation {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.5;
     }
 
     .accent {
@@ -429,11 +444,13 @@
       <div class="hero-copy">
         <p class="store">道後味処 二郎</p>
         <h1>新メニュー</h1>
-        <p class="lead">揚げたての天ぷら、涼やかなハモの湯引き、季節の小鉢。ひと皿ごとの香りと食感を、写真で選びやすくまとめました。</p>
+        <p class="lead">揚げたての天ぷら、タコの唐揚げ、涼やかなハモの湯引き、牛刺し・牛ユッケまで。ひと皿ごとの香りと食感を、写真で選びやすくまとめました。</p>
         <ul class="hero-meta" aria-label="新メニューの特徴">
           <li>季節のおすすめ</li>
           <li>天ぷら</li>
+          <li>唐揚げ</li>
           <li>ハモ料理</li>
+          <li>牛刺し・牛ユッケ</li>
           <li>一品料理</li>
         </ul>
         <div class="hero-links">
@@ -452,7 +469,9 @@
         <div class="filters" aria-label="料理カテゴリ">
           <button class="filter" type="button" data-filter="all" aria-pressed="true">すべて</button>
           <button class="filter" type="button" data-filter="tempura" aria-pressed="false">天ぷら</button>
+          <button class="filter" type="button" data-filter="fried" aria-pressed="false">唐揚げ</button>
           <button class="filter" type="button" data-filter="hamo" aria-pressed="false">ハモ</button>
+          <button class="filter" type="button" data-filter="beef" aria-pressed="false">牛</button>
           <button class="filter" type="button" data-filter="ippin" aria-pressed="false">一品</button>
         </div>
       </div>
@@ -465,7 +484,10 @@
             </div>
             <figcaption class="dish-body">
               <div class="dish-top">
-                <h3>キスの天ぷら</h3>
+                <div>
+                  <h3>キスの天ぷら</h3>
+                  <p class="translation">Kisu Tempura / 보리멸 튀김</p>
+                </div>
                 <span class="tag">天ぷら</span>
               </div>
               <div class="accent" aria-hidden="true"></div>
@@ -481,7 +503,10 @@
             </div>
             <figcaption class="dish-body">
               <div class="dish-top">
-                <h3>ハモ天ぷら</h3>
+                <div>
+                  <h3>ハモ天ぷら</h3>
+                  <p class="translation">Pike Conger Tempura / 갯장어 튀김</p>
+                </div>
                 <span class="tag">天ぷら / ハモ</span>
               </div>
               <div class="accent" aria-hidden="true"></div>
@@ -490,18 +515,59 @@
           </figure>
         </article>
 
-        <article class="dish" data-category="tempura ippin">
+        <article class="dish" data-category="tempura">
           <figure>
-            <div class="dish-image wide">
-              <img src="jiro-menu-assets/gobou-ten.jpg" alt="ゴボウ天">
+            <div class="dish-image">
+              <img src="jiro-menu-assets/corn-tempura.jpg" alt="トウモロコシの天ぷら">
             </div>
             <figcaption class="dish-body">
               <div class="dish-top">
-                <h3>ゴボウ天</h3>
-                <span class="tag">天ぷら / 一品</span>
+                <div>
+                  <h3>トウモロコシの天ぷら</h3>
+                  <p class="translation">Corn Tempura / 옥수수 튀김</p>
+                </div>
+                <span class="tag">天ぷら</span>
               </div>
               <div class="accent" aria-hidden="true"></div>
-              <p>香ばしいごぼうの歯ざわりが心地よい、酒の肴にも合う一皿です。</p>
+              <p>とうもろこしの甘みをそのまま楽しめる、季節感のある一品です。</p>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="dish" data-category="fried ippin">
+          <figure>
+            <div class="dish-image">
+              <img src="jiro-menu-assets/tako-karaage.jpg" alt="タコの唐揚げ">
+            </div>
+            <figcaption class="dish-body">
+              <div class="dish-top">
+                <div>
+                  <h3>タコの唐揚げ</h3>
+                  <p class="translation">Fried Octopus / 문어 튀김</p>
+                </div>
+                <span class="tag">唐揚げ / 一品</span>
+              </div>
+              <div class="accent" aria-hidden="true"></div>
+              <p>外は香ばしく、中はぷりっと。お酒のお供にも食事の一品にもおすすめです。</p>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="dish" data-category="fried ippin">
+          <figure>
+            <div class="dish-image wide">
+              <img src="jiro-menu-assets/gobou-karaage.jpg" alt="ゴボウ唐揚げ">
+            </div>
+            <figcaption class="dish-body">
+              <div class="dish-top">
+                <div>
+                  <h3>ゴボウ唐揚げ</h3>
+                  <p class="translation">Fried Burdock / 우엉 튀김</p>
+                </div>
+                <span class="tag">唐揚げ / 一品</span>
+              </div>
+              <div class="accent" aria-hidden="true"></div>
+              <p>ごぼうの香りと食感がクセになる、つまみやすい一皿です。</p>
             </figcaption>
           </figure>
         </article>
@@ -513,7 +579,10 @@
             </div>
             <figcaption class="dish-body">
               <div class="dish-top">
-                <h3>ハモ湯引き</h3>
+                <div>
+                  <h3>ハモ湯引き</h3>
+                  <p class="translation">Chilled Pike Conger / 갯장어 유비키</p>
+                </div>
                 <span class="tag">ハモ / 一品</span>
               </div>
               <div class="accent" aria-hidden="true"></div>
@@ -540,18 +609,40 @@
           </figure>
         </article>
 
-        <article class="dish" data-category="ippin">
+        <article class="dish" data-category="beef ippin">
           <figure>
             <div class="dish-image">
-              <img src="jiro-menu-assets/kazunoko.jpg" alt="数の子">
+              <img src="jiro-menu-assets/gyu-sashi.jpg" alt="牛刺し">
             </div>
             <figcaption class="dish-body">
               <div class="dish-top">
-                <h3>数の子</h3>
-                <span class="tag">一品</span>
+                <div>
+                  <h3>牛刺し</h3>
+                  <p class="translation">Beef Sashimi / 소고기 사시미</p>
+                </div>
+                <span class="tag">牛 / 一品</span>
               </div>
               <div class="accent" aria-hidden="true"></div>
-              <p>ぷちぷちとした食感とだしの旨み。最初の一品にも、締め前の肴にも。</p>
+              <p>鹿児島黒毛和牛を使った、特別感のある一品。薬味とたれでお召し上がりください。</p>
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="dish" data-category="beef ippin">
+          <figure>
+            <div class="dish-image">
+              <img src="jiro-menu-assets/gyu-yukke.jpg" alt="牛ユッケ">
+            </div>
+            <figcaption class="dish-body">
+              <div class="dish-top">
+                <div>
+                  <h3>牛ユッケ</h3>
+                  <p class="translation">Beef Yukhoe / 소고기 육회</p>
+                </div>
+                <span class="tag">牛 / 一品</span>
+              </div>
+              <div class="accent" aria-hidden="true"></div>
+              <p>卵黄だれと合わせて楽しむ、濃厚な旨みの牛ユッケです。</p>
             </figcaption>
           </figure>
         </article>
